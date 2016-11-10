@@ -8,9 +8,25 @@
 </head>
 <body>
 <div id="qunit"></div>
-<div id="qunit-fixture"></div>
+<div id="qunit-fixture">
+    <div class="linked-checkboxes">
+        <input type="checkbox" id="all" checked="checked">
+        <label for="all">all</label>
+        <input type="checkbox" data-type="dependent" id="memoranda">
+        <label for="memoranda">memoranda</label>
+        <input type="checkbox" data-type="dependent" id="conclusions">
+        <label for="conclusions">conclusions</label>
+        <input type="checkbox" data-type="dependent" id="precedent-books">
+        <label for="precedent-books">precedent-books</label>
+        <input type="checkbox" data-type="dependent" id="notebooks">
+        <label for="notebooks">notebooks</label>
+    </div>
+</div>
+
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/qunit/qunit/qunit.js"></script>
-<script src="/dist/app.js"></script>
+<script src="/src/app.js"></script>
 <script src="tests.js"></script>
 </body>
 </html>
